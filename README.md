@@ -1,3 +1,9 @@
+# Clone
+
+```
+git clone git@github.com:xavgru12/meta-swift-project.git --recurse-submodules
+```
+
 # Build
 
 ```
