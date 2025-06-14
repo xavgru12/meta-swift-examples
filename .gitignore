@@ -1,0 +1,106 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Ignore build directories
+build*/
+tmp/
+sstate-cache/
+cache/
+deploy/
+downloads/
+
+# Ignore BitBake temporary files
+bitbake.lock
+*.run
+*.lock
+*.log
+*.sigdata
+*.siginfo
+*.done
+*.failed
+*.conf.old
+
+# Ignore editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Ignore output files
+*.tar.gz
+*.bin
+*.wic*
+*.ext4
+*.rootfs.*
+
+# Ignore user-specific config
+conf/local.conf
+conf/site.conf
+conf/bblayers.conf
+
+# Ignore custom scripts and artifacts
+*.pyc
+*.pyo
+*.o
+*.a
+*.so
+*.la
+*.lo
+*.rej
+*.orig
+
+# Ignore Git submodule locks
+.gitmodules.lock
+.repo
