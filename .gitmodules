@@ -1,0 +1,3 @@
+[submodule "meta-swift"]
+	path = meta-swift
+	url = git@github.com:xavgru12/meta-swift.git
