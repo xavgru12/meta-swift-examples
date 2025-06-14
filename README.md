@@ -1,11 +1,11 @@
 # Build
 
 ```
-run-docker.sh
+./build-docker.sh
 ```
 
 ```
-build-docker.sh
+./run-docker.sh
 ```
 
 ```
