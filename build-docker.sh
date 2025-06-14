@@ -23,6 +23,6 @@ docker build --tag "${DOCKER_IMAGE_TAG}" \
              --build-arg "USER=$USERNAME" \
              --build-arg "host_uid=$(id -u)" \
              --build-arg "host_gid=$(id -g)" \
-             -f Dockerfile-Ubuntu-22.04 \
+             -f Dockerfile-Ubuntu-20.04 \
              .
 
