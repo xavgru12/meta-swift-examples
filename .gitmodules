@@ -3,4 +3,4 @@
 	url = git@github.com:xavgru12/meta-swift.git
 [submodule "poky"]
 	path = poky
-	url = https://git.yoctoproject.org/poky
+	url = https://github.com/MillerTechnologyPeru/poky.git
