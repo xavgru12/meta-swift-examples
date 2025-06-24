@@ -1,0 +1,13 @@
+name: Hello World CI
+
+on:
+  push:
+
+jobs:
+  say-hello:
+    runs-on: self-hosted
+
+    steps:
+      - name: Echo Hello World
+        run: echo "hello world"
+
