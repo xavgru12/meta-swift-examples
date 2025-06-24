@@ -6,8 +6,9 @@ on:
 jobs:
   say-hello:
     runs-on: self-hosted
-
     steps:
       - name: Echo Hello World
         run: echo "hello world"
-
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
