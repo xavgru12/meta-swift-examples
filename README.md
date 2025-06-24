@@ -22,3 +22,17 @@ cd meta-swift
 ./build.sh
 ```
 
+# Execution
+
+```
+cd poky
+```
+
+```
+source oe-init-build-env
+```
+
+```
+runqemu nographic
+```
+
