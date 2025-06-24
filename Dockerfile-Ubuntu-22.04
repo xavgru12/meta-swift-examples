@@ -9,7 +9,7 @@ RUN apt update && apt upgrade -y && \
     libsdl1.2-dev xterm tar locales net-tools rsync sudo vim curl zstd \
     liblz4-tool libssl-dev bc lzop libgnutls28-dev efitools git-lfs \
     keychain pipx make ninja-build tmux xclip xsel iproute2 \
-    bridge-utils iptables
+    bridge-utils iptables expect
 
 # Install Neovim
 COPY neovim-installer.sh /neovim-installer.sh
