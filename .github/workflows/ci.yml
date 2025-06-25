@@ -13,4 +13,6 @@ jobs:
           clean: false
       - name: build Docker
         run: ./build-docker.sh 
+      - name: runqemu swift hello world
+        run: ./run-docker.sh ./execute.exp 
 
