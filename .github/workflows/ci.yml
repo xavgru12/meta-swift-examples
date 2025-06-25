@@ -1,15 +1,14 @@
-name: Hello World CI
+name: CI
 
 on:
   push:
 
 jobs:
-  say-hello:
+  runqemu:
     runs-on: self-hosted
     steps:
-      - name: Echo Hello World
-        run: echo "hello world"
       - name: Checkout
         uses: actions/checkout@v3
         with:
           clean: false
+
