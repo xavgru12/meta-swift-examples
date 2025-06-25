@@ -12,5 +12,5 @@ jobs:
         with:
           clean: false
       - name: build Docker
-      - run: ./build-docker.sh 
+        run: ./build-docker.sh 
 
