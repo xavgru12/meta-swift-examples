@@ -14,6 +14,8 @@ jobs:
           submodules: recursive
       - name: build Docker
         run: ./build-docker.sh 
+      - name: build Yocto
+        run: ./server-run-docker.sh  bash -c "cd meta-swift && ./build.sh"
       - name: runqemu swift hello world
         run: ./server-run-docker.sh ./execute.exp 
 
