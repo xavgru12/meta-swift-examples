@@ -13,4 +13,4 @@ docker run -i --rm \
   --device /dev/net/tun \
   --cap-add=NET_ADMIN \
     "${DOCKER_IMAGE_TAG}" \
-    $1
+    "$@"
