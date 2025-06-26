@@ -1,4 +1,4 @@
-name: CI
+name: scarthgap
 
 on:
   workflow_dispatch:
