@@ -2,7 +2,7 @@
 
 spawn bash -c "cd poky && source oe-init-build-env && runqemu qemuarm nographic"
 
-set timeout 60
+set timeout 180
 
 expect {
     -re ".*login: " {
