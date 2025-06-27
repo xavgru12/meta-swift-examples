@@ -1,4 +1,4 @@
-name: scarthgap
+name: dunfell
 
 on:
   workflow_dispatch:
