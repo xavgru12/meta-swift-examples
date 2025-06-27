@@ -10,7 +10,6 @@ MACHINE="${MACHINE:=qemuarm}"
 
 # Build Yocto Poky
 cd $POKY_DIR
-echo $POKY_DIR
 source oe-init-build-env
 bitbake-layers add-layer $META_SWIFT_DIR
 # Customize build
