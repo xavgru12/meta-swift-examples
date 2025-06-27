@@ -15,24 +15,18 @@ git clone git@github.com:xavgru12/meta-swift-project.git --recurse-submodules
 ```
 
 ```
-cd meta-swift
-```
-
-```
 ./build.sh
 ```
 
 # Execution
 
 ```
-cd poky
+./execute.exp
 ```
 
-```
-source oe-init-build-env
-```
+# Github Actions
 
-```
-runqemu nographic
-```
+Start runner and trigger job via Github API:
+
+https://github.com/xavgru12/github-self-hosted-runner
 
