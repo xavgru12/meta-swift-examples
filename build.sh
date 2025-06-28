@@ -8,10 +8,21 @@ META_SWIFT_DIR="${META_SWIFT_DIR:=$SRC_ROOT/meta-swift}"
 
 MACHINE="${MACHINE:=qemuarm}"
 
+# Support for Raspberry PI devices
+if [[ $MACHINE == "raspberrypi"* ]]; then
+    META_RASPBERRYPI_DIR=${META_RASPBERRYPI_DIR:=$SRC_ROOT/meta-raspberrypi}
+    if [ ! -d ${META_RASPBERRYPI_DIR} ]; then
+        git clone https://github.com/agherzan/meta-raspberrypi.git $META_RASPBERRYPI_DIR -b scarthgap
+    fi
+fi
+
 # Build Yocto Poky
 cd $POKY_DIR
-source oe-init-build-env
+source oe-init-build-env build-$MACHINE
 bitbake-layers add-layer $META_SWIFT_DIR
+if [ $META_RASPBERRYPI_DIR ]; then
+    bitbake-layers add-layer $META_RASPBERRYPI_DIR
+fi
 # Customize build
 touch conf/sanity.conf
 CONF_FILE=./conf/local.conf
