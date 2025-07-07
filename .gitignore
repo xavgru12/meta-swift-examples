@@ -85,11 +85,6 @@ bitbake.lock
 *.ext4
 *.rootfs.*
 
-# Ignore user-specific config
-conf/local.conf
-conf/site.conf
-conf/bblayers.conf
-
 # Ignore custom scripts and artifacts
 *.pyc
 *.pyo
@@ -104,3 +99,4 @@ conf/bblayers.conf
 # Ignore Git submodule locks
 .gitmodules.lock
 .repo
+
