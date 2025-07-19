@@ -1,3 +1,6 @@
 [submodule "meta-swift"]
 	path = meta-swift
-	url = git@github.com:xavgru12/meta-swift.git
+	url = git@github.com:jeremy-prater/meta-swift.git
+[submodule "poky"]
+	path = poky
+	url = https://github.com/MillerTechnologyPeru/poky.git
