@@ -1,0 +1,45 @@
+#!/usr/bin/expect -f
+
+# Grab machine from env
+set MACHINE qemuarm
+catch {set MACHINE $env(MACHINE)}
+
+spawn bash -c "cd poky && source oe-init-build-env build-${MACHINE} && runqemu ${MACHINE} nographic"
+
+set timeout 180
+
+expect {
+    -re ".*login: " {
+        send "root\r"
+    }
+    timeout {
+        puts "ERROR: Login prompt not received"
+        exit 1
+    }
+}
+
+expect {
+    -re {root@.*# } {
+        # got shell prompt after login
+    }
+    timeout {
+        puts "ERROR: Timeout waiting for root shell prompt after login"
+        exit 1
+    }
+}
+
+send "hello-world\r"
+
+expect {
+    -re {root@.*# } {
+        # got shell prompt after command
+    }
+    timeout {
+        puts "ERROR: Timeout waiting for shell prompt after command"
+        exit 1
+    }
+}
+
+# Optional: interact to keep session open
+#interact
+
