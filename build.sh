@@ -10,8 +10,16 @@ MACHINE="${MACHINE:=qemuarm}"
 
 # Build Yocto Poky
 cd $POKY_DIR
+
+BBLAYERS_FILE=${POKY_DIR}/build/conf/bblayers.conf
+if [ -e "$BBLAYERS_FILE" ]; then
+  rm -rf "$BBLAYERS_FILE"
+fi
+
 source oe-init-build-env
 bitbake-layers add-layer $META_SWIFT_DIR
+echo "BBFILES += \"${SRC_ROOT}/meta-swift-overrides/*.bbappend\"" >> $BBLAYERS_FILE
+
 # Customize build
 touch conf/sanity.conf
 CONF_FILE=./conf/local.conf
