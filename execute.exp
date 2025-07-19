@@ -1,6 +1,10 @@
 #!/usr/bin/expect -f
 
-spawn bash -c "cd poky && source oe-init-build-env && runqemu qemuarm nographic"
+# Grab machine from env
+set MACHINE qemuarm
+catch {set MACHINE $env(MACHINE)}
+
+spawn bash -c "cd poky && source oe-init-build-env build-${MACHINE} && runqemu ${MACHINE} nographic"
 
 set timeout 180
 
