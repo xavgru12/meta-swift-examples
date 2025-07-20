@@ -15,7 +15,7 @@ SSTATE_DIR=${SSTATE_DIR:=$SRC_ROOT/sstate-cache}
 cd $POKY_DIR
 
 
-BBLAYERS_FILE=${POKY_DIR}/build/conf/bblayers.conf
+BBLAYERS_FILE=${POKY_DIR}/build-${MACHINE}/conf/bblayers.conf
 if [ -e "$BBLAYERS_FILE" ]; then
   rm -rf "$BBLAYERS_FILE"
 fi
