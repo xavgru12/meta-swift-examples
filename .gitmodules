@@ -4,3 +4,6 @@
 [submodule "poky"]
 	path = poky
 	url = https://github.com/MillerTechnologyPeru/poky.git
+[submodule "meta-raspberrypi"]
+	path = meta-raspberrypi
+	url = https://github.com/agherzan/meta-raspberrypi.git
