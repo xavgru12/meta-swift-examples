@@ -3,7 +3,7 @@
 	url = git@github.com:jeremy-prater/meta-swift.git
 [submodule "poky"]
 	path = poky
-	url = https://github.com/MillerTechnologyPeru/poky.git
+	url = https://git.yoctoproject.org/poky
 [submodule "meta-raspberrypi"]
 	path = meta-raspberrypi
 	url = https://github.com/agherzan/meta-raspberrypi.git
