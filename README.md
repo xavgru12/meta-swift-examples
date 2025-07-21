@@ -9,8 +9,9 @@ The following machines are supported and have been tested:
 - `qemuarm64`
 - `qemux86-64`
 - `beaglebone-yocto`
-- `raspberrypi-armv7`
-- `raspberrypi-armv8`
+- `raspberrypi2`
+- `raspberrypi3`
+- `raspberrypi4-64`
 
 Others will likely also work, but have not been tested.
 
