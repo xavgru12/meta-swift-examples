@@ -7,7 +7,6 @@ The following machines are supported and have been tested:
 
 - `qemuarm`
 - `qemuarm64`
-- `qemux86-64`
 - `beaglebone-yocto`
 - `raspberrypi2`
 - `raspberrypi3`
