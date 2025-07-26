@@ -17,7 +17,7 @@ Others will likely also work, but have not been tested.
 ## Clone
 
 ```console
-git clone https://github.com/xavgru12/meta-swift-examples.git --recurse-submodules
+git clone https://github.com/swift-embedded-linux/meta-swift-examples.git --recurse-submodules
 ```
 
 ## Build
