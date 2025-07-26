@@ -1,4 +1,4 @@
-name: scarthgap
+name: styhead
 
 on:
   workflow_dispatch:
